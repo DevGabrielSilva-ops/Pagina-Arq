@@ -20,13 +20,27 @@ ul{
 
 footer ul,li {
     list-style: none;
-    color: gray;
+    
     text-decoration: none;
     margin-bottom: 30px;
 }
 
+a{
+    color: inherit
+}
+
+a:hover{
+    color: #0C70F2;
+}
+
+h1{
+    color: black;
+}
+
+
+
 .inf{
-    margin-left: 75%;
+    cursor: pointer;
     gap: 15px;
 }
 

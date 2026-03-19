@@ -46,7 +46,7 @@ function Footer() {
                             </div>
                     </div>
 
-                    <div className="d-flex fd-column al-center Pages">
+                    <div className="d-flex fd-column gray-1-color al-center Pages">
                         <h1>Pages</h1>
                     
                         <ul>
@@ -75,13 +75,13 @@ function Footer() {
                 </div>
                 <hr className="gray-1-color" />
                 
-                <div className="d-flex al-center fd-row">
+                <div className="d-flex al-center jc-space-between fd-row">
                     
                         <p>Copyright © DNC - 2024</p>
                         
-                        <div className="inf d-flex al-center">
-                            <a href=""> <img src= {BrazilLogo}/></a>
-                            <a href=""> <img src= {EuaLogo}/></a>
+                        <div className="d-flex inf">
+                            <img src= {BrazilLogo}/>
+                             <img src= {EuaLogo}/>
                         </div>
                     
                 </div>

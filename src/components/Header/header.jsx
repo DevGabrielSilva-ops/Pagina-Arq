@@ -11,7 +11,7 @@ function Header() {
     return (
         <header>
             <div className="container" >
-                <div className="al-center d-flex jc-space-between">
+                <div className="d-flex al-center jc-space-between">
                     <Link to="/"> <img src={Logo} /> </Link>
 
                     <nav>
