@@ -1,0 +1,32 @@
+.social-links{
+    margin: 0;
+    gap: 55px;
+}
+.Pages{ 
+    margin: 0;
+    gap: 9px;
+}
+.Pages h1{
+  font-family:  "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin: 0;
+}
+
+ul{
+    margin-top: 15px;
+    padding: 0;
+}
+
+footer ul,li {
+    list-style: none;
+    color: gray;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.inf{
+    margin-left: 75%;
+    gap: 15px;
+}
+
