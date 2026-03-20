@@ -1,0 +1,53 @@
+.Project {
+    padding: 40px;
+}
+
+.Title-Project{
+    text-align: center;
+}
+
+.Title-Project h2{
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.Title-Project p{
+    font-size: 22px;
+}
+
+.Project-Layout{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 30px;
+    padding: 50px;
+}
+
+.Project-Interno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Project-Interno h1{
+    margin: 0;
+    font-size: 20px;
+}
+
+#Like{
+    width: 30px;
+    cursor: pointer;
+    height: 30px;
+}
+
+.Project-Interno p{
+    margin: 0;
+}
+
+.Project-Interno img{
+    width: 230px;
+    height: 333px;
+
+    border-radius: 15px;
+}
