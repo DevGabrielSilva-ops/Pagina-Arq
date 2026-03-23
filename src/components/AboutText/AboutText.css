@@ -1,0 +1,28 @@
+/* ABOUT AS */
+
+.Inf-dir{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    gap: 97px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    
+}
+
+.Inf-dir h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.Inf-dir p{
+    font-size: 22px;
+    margin-top: 35px;
+}
+ 
+@media (max-width: 768px) {
+    .Inf-dir{
+        flex-direction: column;
+    } 
+}

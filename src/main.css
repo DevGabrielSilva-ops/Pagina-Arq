@@ -46,6 +46,7 @@ a {
 /* GRID */ 
 
 .container {
+  box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
   max-width: 1140px;
@@ -81,28 +82,6 @@ a {
   justify-content: space-between;
 }
 
-/* ABOUT AS */
-
-.Inf-dir{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
-    gap: 97px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    
-}
-
-.Inf-dir h2{
-    font-weight: 400;
-    font-size: 40px;
-}
-
-.Inf-dir p{
-    font-size: 22px;
-    margin-top: 35px;
-}
 
 
 

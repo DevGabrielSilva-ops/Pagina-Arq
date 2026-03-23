@@ -18,7 +18,7 @@
 
 .Project-Layout{
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     padding: 50px;
 }
@@ -45,9 +45,23 @@
     margin: 0;
 }
 
-.Project-Interno img{
+.Project-img{
     width: 230px;
     height: 333px;
 
     border-radius: 15px;
+}
+
+
+
+@media (max-width: 768px) {
+    .Project-Layout{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 568px) {
+    .Project-Layout{
+        grid-template-columns: repeat(1,1fr);
+    }
 }

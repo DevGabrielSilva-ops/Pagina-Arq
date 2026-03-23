@@ -17,7 +17,7 @@ function Footer() {
     return (
         <footer>
             <div className="container" >
-                <div className="d-flex jc-space-between">
+                <div className="d-flex mobile-fd-column jc-space-between">
                     <div className="footer-logo-col">
                         <Link> <img src={Logo}/></Link>
                        
@@ -46,7 +46,7 @@ function Footer() {
                             </div>
                     </div>
 
-                    <div className="d-flex fd-column gray-1-color al-center Pages">
+                    <div className="d-flex fd-column gray-1-color Pages">
                         <h1>Pages</h1>
                     
                         <ul>

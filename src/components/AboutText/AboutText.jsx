@@ -1,0 +1,32 @@
+import '../AboutText/AboutText.css'
+function AboutText () {
+    return (
+         <div className=" container Inf-dir">
+          <h2>We set the trends of <br />
+            modern living <br />
+            Services.</h2>
+            <div>
+                <p className="primary-color">
+                    It is a long established fact that a reader will be distracted by the of <br />
+                    readable content of a page
+                </p>
+
+                <p>
+                    when lookings at its layouts the points spriof using that it has a more <br />
+                    less normal.A wonderful serenity has taken pgossession of my entire <br />
+                    soul, like thesce sweet morndsings of sphring which I enjoy with my <br />
+                    forwhole heart. I am alone, and feel the charm of excgistence in this <br />    
+                    spot, which was created for the bliss of souls like mine.</p>
+                <p>
+                    when lookings at its layouts the points spriof using that it has a more <br />
+                    less normal.A wonderful serenity has taken pgossession of my entire <br />
+                    soul, like thesce sweet morndsings of sphring which I enjoy with my <br />
+                    forwhole heart. I am alone, and feel the charm of excgistence in this <br />
+                    spot, which was created for the bliss of souls like mine.
+                </p>
+            </div>
+        </div>
+    )
+}
+
+export default AboutText
