@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 //Rotas
 import { BrowserRouter as Router,Route,Routes,Link } from 'react-router-dom' 
 
@@ -9,9 +10,14 @@ import Projects from "./pages/Projects"
 
 //UTILS
 import ScrollTop from './utils/ScrollTop'
+import { AppContext } from './contexts/AppContext'
 
 function App() {
+  const appContext = useContext(AppContext)
 
+  if(appContext.loading){
+    return 'Loading ...'
+  }
 
   return (
     <Router>

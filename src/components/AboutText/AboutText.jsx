@@ -1,28 +1,22 @@
 import '../AboutText/AboutText.css'
+import { useContext } from 'react'
+
+import { AppContext } from '../../contexts/AppContext'
 function AboutText () {
+    const appContext = useContext(AppContext)
     return (
          <div className=" container Inf-dir">
-          <h2>We set the trends of <br />
-            modern living <br />
-            Services.</h2>
+          <h2>{appContext.Languages?.[appContext.Language]?.about?.title}</h2>
             <div>
                 <p className="primary-color">
-                    It is a long established fact that a reader will be distracted by the of <br />
-                    readable content of a page
+                   {appContext.Languages?.[appContext.Language]?.about?.p1}
                 </p>
 
                 <p>
-                    when lookings at its layouts the points spriof using that it has a more <br />
-                    less normal.A wonderful serenity has taken pgossession of my entire <br />
-                    soul, like thesce sweet morndsings of sphring which I enjoy with my <br />
-                    forwhole heart. I am alone, and feel the charm of excgistence in this <br />    
-                    spot, which was created for the bliss of souls like mine.</p>
+                     {appContext.Languages?.[appContext.Language]?.about?.p2}
+                </p>
                 <p>
-                    when lookings at its layouts the points spriof using that it has a more <br />
-                    less normal.A wonderful serenity has taken pgossession of my entire <br />
-                    soul, like thesce sweet morndsings of sphring which I enjoy with my <br />
-                    forwhole heart. I am alone, and feel the charm of excgistence in this <br />
-                    spot, which was created for the bliss of souls like mine.
+                     {appContext.Languages?.[appContext.Language]?.about?.p3}
                 </p>
             </div>
         </div>

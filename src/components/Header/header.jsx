@@ -1,8 +1,11 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Button from '../Button/Button'
 // ASSETS
 import Logo from '../../assets/Dnc.svg'
+
+
+import { AppContext } from '../../contexts/AppContext'
 
 //Styles
 import "./header.css"
@@ -13,6 +16,9 @@ function Header() {
     const abreMenu = () => {
         setIsOpen(!isOpen)
     }
+
+    const appContext = useContext(AppContext)
+
     return (
         <header>
             <div className="container" >
@@ -29,10 +35,10 @@ function Header() {
                             X
                         </Button>
                         <ul className='d-flex'>
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
-                            <li><Link to="/projects">Projects</Link></li>
+                            <li><Link to="/">{appContext.Languages?.[appContext.Language]?.menu?.home}</Link></li>
+                            <li><Link to="/about">{appContext.Languages?.[appContext.Language]?.menu?.about}</Link></li>
+                            <li><Link to="/contact">{appContext.Languages?.[appContext.Language]?.menu?.projects}</Link></li>
+                            <li><Link to="/projects">{appContext.Languages?.[appContext.Language]?.menu?.contact}</Link></li>
 
                         </ul>
                     </nav>

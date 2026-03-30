@@ -1,16 +1,20 @@
 import { Link } from 'react-router-dom'
 import '../Hero/Hero.css'
 import Button from '../Button/Button'
+import { useContext } from 'react'
+
+import { AppContext } from '../../contexts/AppContext'
 
 function Hero() {
+    const appContext = useContext(AppContext)
     return (
         <div className="hero d-flex al-center jc-center ">
             <div className="hero-text">
-                <h1>Let Your Home Be Unique</h1>
-                <p>There are many variations of the passages of lorem Ipsum fromavailable, majority.</p>
+                <h1>{appContext.Languages?.[appContext.Language]?.hero?.title}</h1>
+                <p>{appContext.Languages?.[appContext.Language]?.hero?.subtitle}</p>
                 <Link to="/about">
                     <Button buttonStyle= "secundary">
-                        Get Started
+                       {appContext.Languages?.[appContext.Language]?.hero?.cta}
                     </Button>
                 </Link>
             </div>
