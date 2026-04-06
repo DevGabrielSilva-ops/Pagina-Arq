@@ -1,44 +1,28 @@
 import '../Projects/Projects.css'
 import LikedFilled from '../../assets/Like-Filled.svg'
 import Like from '../../assets/Like.svg'
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
 
 import { useContext } from 'react'
 
 import { AppContext } from '../../contexts/AppContext'
 
-import { getApiData } from '../../services/apiServices'
 
 function Project(props){
      const appContext = useContext(AppContext)
     //Likes
-    const [isLike,setisLike] = useState([false,false,false,false,false,false,false,false])
+     const salvaProjects = localStorage.getItem('project')
+     const [isLike,setisLike] = useState(salvaProjects ?? [false,false,false,false,false,false,false,false])
      const ConfirmaLike = (clickado) => {
         const novoLike = [...isLike]   // copia o array
         novoLike[clickado] = !novoLike[clickado] // inverte só o clicado
         setisLike(novoLike) // atualiza o estado
-
-
-    const [projects,setProject] = useState()
+     }  
 
     useEffect(() => {
-        const fetchData = async () => {
-            try{
+        localStorage.setItem('project', isLike)
+     }, [isLike])
 
-                const projectsResponse = await getApiData('projects')
-                setProject(projectsResponse)
-
-            } catch {
-                setProject([])
-            }
-        }
-
-        fetchData()
-     }, [])
-
-     
-
-     }  
     return (
        
         <div className="Project container d-flex fd-column" {...props}>
